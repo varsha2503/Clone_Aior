@@ -1,0 +1,196 @@
+ body 
+{
+    background: url("https://i.gifer.com/OguZ.gif") no-repeat;
+    background-size: cover;
+  background-color: rgba(0, 0, 0, 0.5); 
+    color: white;
+  margin: 0;
+    font-family: Arial, sans-serif;
+    /* opacity: 0.5 ; */
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(to bottom right, aqua 0%, blueviolet 50%, blueviolet 50%, plum 100%);
+    color: rgb(0, 0, 0);
+    display: flex;
+  justify-content: space-between;
+  align-items: center;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo img{
+    width: 70px;
+    height: 70px;
+    margin-left: 20px ;
+    margin-right: 20px ;
+    margin-top: 10px;
+}
+
+.nav-links strong
+{
+    font-size: 50px;
+    margin-top: none ;
+}
+.navbar .beta-button {
+    margin-left: auto;
+    margin-right: 50px ;
+  }
+
+.toggle-button {
+    display: none;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin-right: 20px;
+    margin-top: 28px ;
+    font-size: 20px ;
+}
+
+.nav-links b {
+    margin-top: 0px;
+    font-size: 60px ;
+    margin-right: 10px ;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+}
+
+.beta-button {
+    background-color: #000000;
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    margin-top: 8px;
+    transition: background-color 0.3s;
+}
+
+.beta-button:hover {
+    background-color: #00e6db;
+  }
+
+  .nav-links li:nth-child(2) a {
+    border: 1px solid white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    /* transition: border-color 0.3s, color 0.3s; 
+    transition: margin-top 0.3s, 10px 0.3s;  */
+  }
+
+  /* .nav-links li:not(:nth-child(2)):hover {
+    background-color: #00dc9e; 
+    padding: 10px 20px;
+    padding-bottom: 5px ;
+    border-radius: 5px;
+    margin-top: 10px ;
+  } */
+  
+
+.content {
+    margin-top: 180px;
+    padding: 20px;
+}
+
+.content h1 {
+    font-size: 70px ;
+    
+    margin: 0; 
+  padding: 0; 
+  line-height: 1; 
+  margin-left: 80px ;
+}
+
+.content p {
+    margin: 0; 
+  padding: 0; 
+  line-height: 1.5 ; 
+  margin-left: 80px ;
+}
+
+  .learn-more-button,
+  .launch-app-button {
+    background-color: #8100b0;
+    color: white;
+    border: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 50px;
+    padding-right: 50px ;
+    border-radius: 50px;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-left: 80px;
+    margin-bottom: 55px ;
+    transition: background-color 0.3s; /* Add transition for smooth hover effect */
+  }
+  
+  .learn-more-button:hover,
+  .launch-app-button:hover {
+    background-color: #00d6de;
+  }
+
+
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background-color: #333;
+        width: 100%;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .dropdown {
+        position: relative;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #333;
+        width: 100%;
+        top: 100%;
+        left: 0;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+}  
